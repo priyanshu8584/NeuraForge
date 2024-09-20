@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const page = () => {
+ const TransformationsByID= () => {
   return (
     <div>page</div>
   )
 }
+export default TransformationsByID
