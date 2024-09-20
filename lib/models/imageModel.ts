@@ -1,5 +1,5 @@
-import { transformationTypes } from "@/app/constants";
-import mongoose, { Schema, model, models } from "mongoose";
+
+import  { Schema, model, models } from "mongoose";
 export interface IImage extends Document {
   title: string;
   transformationType: string;
