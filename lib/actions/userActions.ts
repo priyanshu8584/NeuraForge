@@ -36,7 +36,7 @@ export async function updateUser(clerkId: string, user: UpdateUserParams)
       const updatedUser=User.findByIdAndUpdate({clerkId},user,{new:true});
       if(!updateUser)
         throw new Error("user update failed");
-      return JSON.parse(JSON.stringify(updateUser));
+      return JSON.parse(JSON.stringify(updatedUser));
   }
   catch(error)
   {
