@@ -10,7 +10,7 @@ import { UserButton } from '@clerk/nextjs'
 const Sidebar = () => {
   const pathname=usePathname();
   return (
-    <aside className='hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex'
+    <aside className='hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex sm:hidden'
     >
       <div className='flex size-full flex-col gap-3'>
         <Link href={"/"} className='flex items-center gap-2 md:py-2'>
@@ -39,7 +39,7 @@ const Sidebar = () => {
            </SignedIn>
            <SignedOut>
             <Button asChild className='button bg-purple-gradient bg-cover'>
-              <Link href={"/sign-in"}>SIgnin</Link>
+              <Link href={"/sign-in"}>Signin</Link>
             </Button>
            </SignedOut>
         </nav>
